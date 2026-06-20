@@ -1,0 +1,108 @@
+/* ============================================
+   AcademicTestHub – Landing Page Styles
+   ============================================ */
+
+.landing-page {
+    min-height: 100vh;
+}
+
+/* ----- Hero ----- */
+.hero-section {
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-section .hero-title {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+.hero-section .hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 500px;
+}
+.hero-section .btn-primary {
+    background: #4F46E5;
+    border: none;
+    transition: all 0.25s ease;
+}
+.hero-section .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(79, 70, 229, 0.4);
+}
+.hero-section .btn-outline-light {
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    transition: all 0.25s ease;
+}
+.hero-section .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ----- Features ----- */
+.features-section .feature-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+.features-section .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+.features-section .feature-icon {
+    font-size: 2.2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 50%;
+    background: rgba(79, 70, 229, 0.08);
+    color: #4F46E5;
+}
+.features-section .feature-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0F172A;
+}
+.features-section .feature-desc {
+    color: #64748B;
+    font-size: 0.9rem;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 60px;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    .hero-section .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-section .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-section .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem !important;
+    }
+    .hero-section .btn {
+        width: 100%;
+    }
+    .features-section .feature-card {
+        padding: 1.5rem 1rem;
+    }
+}
